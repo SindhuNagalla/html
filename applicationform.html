@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            border-radius: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+        table
+        {
+            border:2px solid black;
+        }
+    </style>
 </head>
 <body>
-    <form style="background-color: darkcyan;">
         <h1>Application Form</h1>
+        <form style="background-color: burlywood;">
         <label for="fname">First Name:</label>
         <input type="text" name="fname" id="fname">
 
@@ -49,7 +61,7 @@
         <label for="Confirm password">Confirm password:</label>
         <input type="password" name="cf" id="confirm password" maxlength="8">
 
-        <h2>Positions Available:</h2>
+        <h2 style="color:chartreuse">Positions Available:</h2>
         <input type="radio" name="positions" id="jd">
         <label for="jd">Junior Developer</label>
 
@@ -61,7 +73,7 @@
         
         <br>
 
-        <h2>Programming languages:</h2>
+        <h2 style="color:chartreuse">Programming languages:</h2>
         <input type="checkbox" name="java" id="java">
         <label for="java">java</label>
 
@@ -70,6 +82,26 @@
 
         <input type="checkbox" name="oracle" id="oracle">
         <label for="oracle">oracle</label>
+
+        <br><br>
+
+        <table>
+            <tr>
+                <th>Timetable</th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Timings</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>Holiday</td>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>Starts from 9:30am to 5pm</td>
+            </tr>
+        </table>
 
         <br><br>
 
@@ -83,8 +115,12 @@
 
         <br><br>
 
-        <input type="submit" value="submit" style="text-align:center">
-        <input type="reset" value="reset">
+        <input type="submit" value="submit" style="background-color: brown;">
+        <input type="reset" value="reset" style="background-color: brown;">
     </form>
+
+    <p>contact us:<br>
+        noreply@gmail.com<br>
+    </p>
 </body>
 </html>

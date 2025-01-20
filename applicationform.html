@@ -11,18 +11,22 @@
         h1{
             text-align: center;
         }
-        table
+        table,td,tr,th
         {
             border:2px solid black;
+            border-collapse: collapse;
+            padding:20px;
+            margin:10px;
         }
     </style>
 </head>
 <body>
         <h1>Application Form</h1>
         <form style="background-color: burlywood;">
+            <div>
         <label for="fname">First Name:</label>
         <input type="text" name="fname" id="fname">
-
+            </div>
         <br><br>
 
         <label for="lname">Last Name:</label>
@@ -85,9 +89,9 @@
 
         <br><br>
 
-        <table>
+        <table style="width:70%">
             <tr>
-                <th>Timetable</th>
+                <th colspan="2">Timetable</th>
             </tr>
             <tr>
                 <th>Day</th>
@@ -115,8 +119,8 @@
 
         <br><br>
 
-        <input type="submit" value="submit" style="background-color: brown;">
-        <input type="reset" value="reset" style="background-color: brown;">
+        <p style="text-align: center;"><input type="submit" value="submit" style="background-color: brown; text-align: center; padding:2px;">
+        <input type="reset" value="reset" style="background-color: brown; text-align: center; padding:2px"></p>
     </form>
 
     <p>contact us:<br>

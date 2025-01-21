@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <button onclick="playpause()">Play/Pause</button>
+    <button onclick="increasesize()">Increase size</button>
+    <button onclick="decreasesize()">Decrease size</button>
+
+    <br><br>
+
+    <video controls controlslist="nodownload" id="videoo" width="500">
+        <source src="istockphoto-1691168649-640_adpp_is.mp4" type="video/mp4">
+        <source src="istockphoto-1753779792-640_adpp_is.mp4" type="video/mp4">
+    </video>
+    </div>
+    <script>
+        var myvideo=document.getElementById("videoo");
+
+        function playpause(){
+            if(myvideo.paused)
+            myvideo.play();
+        else
+        myvideo.pause();
+        }
+
+        function increasesize(){
+            myvideo.width="700";
+        }
+        function decreasesize(){
+            myvideo.width="300";
+        }
+    </script>
+</body>
+</html>

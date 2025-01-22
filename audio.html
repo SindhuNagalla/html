@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="playpause()">Play/Pause</button>
+
+    <audio controls autoplay muted loop controlslist="nodownload" id="audio">
+        <source src="[iSongs.info] 02 - Fear Song.mp3" type="audio/mp3">
+        <source src="sample-15s.mp3.crdownload" type="audio/mp3">
+    </audio>
+    <script>
+        var myaudio=document.getElementById("audio");
+
+        function playpause(){
+            if(myaudio.paused)
+                myaudio.play();
+            else
+            myaudio.pause();
+        }
+    </script>
+</body>
+</html>

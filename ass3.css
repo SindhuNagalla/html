@@ -1,0 +1,33 @@
+#button{
+    margin-left: 1000px;
+    margin-inline: 50px;
+}
+.two{
+    float: left;
+    width: 24%;
+    padding: 6px;
+    background-color: blueviolet;
+}
+.three{
+    float: left;
+    width: 24%;
+    padding: 5px;
+    background-color: blueviolet;
+}
+.two h3{
+    text-align: center;
+}
+.three h3{
+    text-align: center;
+}
+p a{
+    margin-left: 200px;
+    font-size: 20px;
+}
+a:hover{
+    background-color: chartreuse;
+    font-size: 35px;
+}
+body{
+    background-color: cornsilk;
+}

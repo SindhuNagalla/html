@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <h1> Student ID Card Application form</h1>
+    <form action="">
+        <div class="Personal">
+            <h2>Personal Details</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname">
+
+        <br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname">
+
+        <br><br>
+
+        <label for="faname">Father name:</label>
+        <input type="text" name="faname" id="faname">
+
+        <br><br>
+
+        <label for="mname">Mother Name:</label>
+        <input type="text" name="mname" id="mname">
+
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+
+        <br><br>
+
+        <label for="email">Emailid:</label>
+        <input type="text" name="email" id="email" placeholder="enter email address">
+
+        <br><br>
+
+        <label for="mno">Mobile Number:</label>
+        <input type="text" name="mno" id="mno">
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="aadhar">Upload aadhar:</label>
+        <input type="file" name="aadhar" id="aadhar">
+    </div>
+    <div>
+        <h2>Academic details</h2>
+        <label for="level">Level of Study:</label>
+        <select name="level" id="level">
+            <option value="12">12th Graduate</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Btech" selected>Btech</option>
+            <option value="mtech">mtech</option>
+            <option value="Degree">Degree</option>
+        </select>
+        <br><br>
+        <label for="pass">Pass out year:</label>
+        <input type="number" name="pass" id="pass" min="2021" max="2025" reguired>
+        <br><br>
+        <label for="percentage">Academic percentage:</label>
+        <input type="text" name="percentage" id="percentage">
+
+        <br><br>
+    </div>
+    <div>
+        <h2>Courses Details</h2>
+        <label for="courses">Courses:</label>
+        <br><br>
+        <input type="checkbox" name="courses" id="courses">
+        <label for="courses">Full stack Java</label>
+        <br><br>
+        <input type="checkbox" name="html" id="html">
+        <label for="html">html||css||javascript</label>
+        <br><br>
+        <input type="checkbox" name="python" id="python">
+        <label for="python">Full Stack python</label>
+        <br><br>
+        <input type="checkbox" name="oracle" id="oracle">
+        <label for="oracle">Orcale</label>
+        <br><br>
+        <input type="checkbox" name="Core Java" id="cj">
+        <label for="cj">Core Java</label>
+        <br><br>
+        <input type="checkbox" name="AWS deveops" id="ad">
+        <label for="ad">AWS Deveops</label>
+        <br><br>
+        <label for="facname">Faculty Name:</label>
+        <input type="text" name="facname" id="facname">
+        <br><br>
+        <label for="time"> Batch Time:</label>
+        <input type="time" name="time" id="time">
+        <br><br>
+        <label for="doj">Date of Joining:</label>
+        <input type="date" name="doj" id="doj">
+        <br><br>
+        <label for="upr">Upload fees Receipt:</label>
+        <input type="file" name="upr" id="upr">
+        <br><br>
+    </div>
+    <div id="Submit">
+        <button>
+            Submit
+            <div class="dialog-box">successfully submitting the form</div>
+        </button>
+    </div> 
+        </form>
+</body>
+</html>

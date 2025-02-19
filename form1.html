@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        form{
+            background-color:blueviolet;
+            margin: 0px;
+            margin-right: 600px;
+            padding: 20px;
+        }
+        .inline{
+            width:140px;
+            display: inline-block;
+            color: black;
+        }
+        .bc{
+            background-color: white;
+        }
+        body{
+            color: white;
+            background-image: url(./assets/lap4.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: greenyellow; text-align: center; font-size:60px;">Application Form</h1>
+    <form action="./submit.html">
+        <label for="fname" class="inline">First Name:</label>
+        <input type="text" name="" id="fname">  (max 30 characters a-z and A-Z)
+        <br><br>
+        <label for="lname" class="inline">Last Name:</label> 
+        <input type="text" name="" id="lname"> (max 30 characters a-z and A-Z)
+        <br><br>
+        <label for="date" class="inline">Date Of Birth:</label>
+        <input type="date" name="" id="date">
+        <br><br>
+        <label for="email" class="inline">Email:</label>
+        <input type="email" name="" id="email">
+        <br><br>
+        <label for="mn" class="inline">Mobile Number:</label>
+        <input type="tel" name="mn" id="mn">  (10 digit number)
+        <br><br>
+        <label for="gender" class="inline">Gender:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="Address" class="inline">Adrdress:</label> 
+        <textarea name="Address" id="Address" rows="4" cols="20"></textarea>
+        <br><br>
+        <label for="City" class="inline">City:</label>
+        <input type="text" name="City" id="City"> (max 30 characters a-z and A-Z)
+        <br><br>
+        <label for="Pin code" class="inline">Pin Code:</label>
+        <input type="text" name="pin" id="Pi Code" maxlength="6"> (6 digit number)
+        <br><br>
+        <label for="state" class="inline">State:</label> 
+        <select name="state" id="state">
+            <option value="Telangana">Telangana</option>
+            <option value="Ap">Andhra Pradesh</option>
+            <option value="Tamilnadu">Tamil Nadu</option>
+        </select>
+        <br><br>
+        <label for="Country" class="inline">Country:</label>
+        <input type="text" name="Country" id="Country">
+        <br><br>
+        <label for="hobbies" class="inline">Hobbies:</label>
+        <input type="checkbox" name="drawing" id="hobbies">
+        <label for="hobbies">Drawing</label>
+        <input type="checkbox" name="hobbies" id="Singing">
+        <label for="Singing">Singing</label>
+        <input type="checkbox" name="Dancing" id="Dancing">
+        <label for="Dancing">Dancing</label>
+        <br><br>
+        <input type="checkbox" name="Others" id="others" style="margin-left:150px;">
+        <label for="others">Others</label>
+        <input type="text" name="others" id="others">
+        <br><br>
+        <label for="Qualification" class="inline">Qualification:</label>
+        <table style="width: 700px;">
+            <tr>
+                <th>S.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of passing</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> Post Masters</td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+                <td class="bc" style="width:120px;"><input type="text" name="" id="" style="width:120px;"></td>
+            </tr>
+        </table>
+        <br><br>
+        <label for="Courses" class="inline">Courses Applied for:</label>
+        <input type="radio" name="courses" id="Java Full stack">
+        <label for="java full stack">Java full stack</label>
+        <input type="radio" name="courses" id="Python full stack">
+        <label for="python full stack">Python full stack</label>
+        <input type="radio" name="courses" id="Data science">
+        <label for="Data science">Data science</label>
+        <input type="radio" name="courses" id="Data Analytics">
+        <label for="Data Analytics">Data Analytics</label>
+        <br><br>
+        <a href="./submit.html" style="margin-left: 380px;" target="_blank"><button>Submit</button></a>
+        <button>Reset</button>
+    </form>
+    
+</body>
+</html>

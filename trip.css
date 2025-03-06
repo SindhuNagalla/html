@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+}
+.trip{
+    display: flex;
+    background-color: yellow;
+    height:50px;
+    text-align: center;
+    align-items: center;
+}
+.trip .sec1{
+    width:300px;
+    display:flex;
+    justify-content: space-around;
+}
+.trip .sec2 ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width:1000px;
+}
+.trip .sec2{
+    display: flex;
+    width:1200px;
+    justify-content: center;
+    align-items: center;
+}
+.sec3{
+    border:2px solid black;
+    width:350px;
+    padding:30px;
+    margin:40px;
+    background-color:rgb(133, 34, 227);
+    color:white;
+}
+.sec4{
+    border:2px solid black;
+    width:350px;
+    padding:30px;
+    margin:40px;
+    background-color:rgb(133, 34, 227);
+    color:white;
+}
+.sec5{
+    border:2px solid black;
+    width:350px;
+    padding:30px;
+    margin:40px;
+    background-color:rgb(133, 34, 227);
+    color:white;
+}
+.image{
+    display:flex;
+}
+.image .sec3 .img{
+    padding:20px;
+}
+.image .sec4 .img{
+    padding:25px;
+}
+.image .sec5 .img{
+    padding:25px;
+}
+.image .star{
+    text-align: center;
+}
+.image .place{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.image .price{
+    text-align: center;
+    color:white; 
+    font-size:20px;
+}
+.image .duration{
+    background-color: yellow;
+    color:black; 
+    border-radius: 20px; 
+    border-color: yellow; 
+    text-align: center;
+}
+.secondline{
+    display: flex;
+}
+.secondline .sec3 .img{
+    padding:20px;
+}
+.secondline .sec4 .img{
+    padding:25px;
+}
+.secondline .sec5 .img{
+    padding:25px;
+}
+.secondline .star{
+    text-align: center;
+}
+.secondline .place{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.secondline .price{
+    text-align: center;
+    color:white; 
+    font-size:20px;
+}
+.secondline .duration{
+    background-color: yellow;
+    color:black; 
+    border-radius: 20px; 
+    border-color: yellow; 
+    text-align: center;
+}
+.trip .sec2 .aero{
+    border-radius: 15px;
+    border: 5px solid white;
+}
+.sec2 ul a{
+    text-decoration: none;
+}
+
+.sec2 ul a:hover{
+    color:red;
+}
